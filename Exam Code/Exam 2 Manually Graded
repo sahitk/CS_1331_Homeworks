@@ -1,0 +1,21 @@
+public int[] double(int[] input) {
+    int[] doubled = new int[input.length];
+    for (int i = 0; i < input.length; i++) {
+        doubled[i] = input[i];
+    }
+    for (int i = 0; i < doubled.length; i += 2) {
+        doubled[i] *= 2;
+    }
+    return doubled;
+}
+
+//better way:
+/*
+for (int i = 0; i < input.length; i++) {
+    doubled[i] = input[i];
+    if (i % 2 == 0) {
+        doubled[i] *= 2;
+    }
+}
+//delete second for loop
+*/
